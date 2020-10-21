@@ -14,10 +14,26 @@ app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+const db = require("./app/models");
+db.mongoose
+    .connect(db.url, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    })
+    .then(() => {
+        console.log("Connected to Mongo database");
+    })
+    .catch(err => {
+        console.log("Unable to connect to the database. ", err);
+    });
+
 // top route for testing
 app.get("/", (req, res) => {
     res.json({ message: "Welcome to LM Policy Manager API" });
 });
+
+// set up Router
+require("./app/routes/policy.routes")(app);
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
