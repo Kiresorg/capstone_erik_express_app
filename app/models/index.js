@@ -7,6 +7,6 @@ const db = {};
 db.mongoose = mongoose;
 db.url = dbConfig.url;
 db.policies = require("./policy.model")(mongoose);
-//db.claims = require("./claim.model.js")(mongoose);
+db.claims = require("./claim.model.js")(mongoose);
 
 module.exports = db;

@@ -34,6 +34,7 @@ app.get("/", (req, res) => {
 
 // set up Router
 require("./app/routes/policy.routes")(app);
+require("./app/routes/claim.routes")(app);
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
