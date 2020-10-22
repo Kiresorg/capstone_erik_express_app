@@ -1,3 +1,53 @@
+POST http://localhost:8080/api/policies HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Silver Auto Policy",
+    "holder_first_name": "Erik",
+    "holder_last_name": "Gross",
+    "holder_account_id": "555",
+    "is_active_policy": true,
+    "has_active_claim": false,
+    "effective_date": "2020-10-20T18:00:00.000Z",
+    "termination_date": "2030-10-20T18:00:00.000Z"
+}
+
+###
+
+GET http://localhost:8080/api/policies HTTP/1.1
+content-type: application/json
+
+###
+
+GET http://localhost:8080/api/policies/5f90e1acf829950d28be00ee HTTP/1.1
+content-type: application/json
+
+###
+
+PUT http://localhost:8080/api/policies/5f90e1acf829950d28be00ee HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Bronze Auto Policy"
+}
+
+###
+
+DELETE http://localhost:8080/api/policies/5f90e1acf829950d28be00ee HTTP/1.1
+content-type: application/json
+
+###
+
+DELETE http://localhost:8080/api/policies HTTP/1.1
+content-type: application/json
+
+###
+
+GET http://localhost:8080/api/policies/active HTTP/1.1
+content-type: application/json
+
+###
+
 POST http://localhost:8080/api/claims HTTP/1.1
 content-type: application/json
 
@@ -13,14 +63,3 @@ content-type: application/json
 
 ###
 
-POST http://localhost:8080/api/policies HTTP/1.1
-content-type: application/json
-
-{
-    "name": "Silver Auto Policy",
-    "type": "Auto",
-    "holder_first_name": "Erik",
-    "holder_last_name": "Gross",
-    "is_active": true,
-    "effective_date": "2020-10-20T18:00:00.000Z"
-}
