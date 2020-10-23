@@ -47,19 +47,3 @@ GET http://localhost:8080/api/policies/active HTTP/1.1
 content-type: application/json
 
 ###
-
-POST http://localhost:8080/api/claims HTTP/1.1
-content-type: application/json
-
-{
-    "opened_date": "",
-    "incident_date": "2020-10-20T18:00:00.000Z",
-    "adjustor_notes": "Adj notes 3",
-    "compensation_amount": 4000,
-    "decision": "decision",
-    "decision_date": "2020-10-20T18:00:00.000Z",
-    "is_closed": false
-}
-
-###
-

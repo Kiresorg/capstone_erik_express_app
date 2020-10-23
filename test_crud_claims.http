@@ -1,0 +1,47 @@
+POST http://localhost:8080/api/claims HTTP/1.1
+content-type: application/json
+
+{
+    "policy_id": "5f910695e57d68a7ec27e59e",
+    "opened_date": "",
+    "incident_date": "2020-10-20T18:00:00.000Z",
+    "adjustor_notes": "Adj notes 3",
+    "compensation_amount": 4000,
+    "decision": "decision",
+    "decision_date": "2020-10-20T18:00:00.000Z",
+    "is_closed": false
+}
+
+###
+
+GET http://localhost:8080/api/claims HTTP/1.1
+content-type: application/json
+
+###
+
+GET http://localhost:8080/api/claims/5f93508fd5933ec9d4648f84 HTTP/1.1
+content-type: application/json
+
+###
+
+PUT http://localhost:8080/api/claims/5f93508fd5933ec9d4648f84 HTTP/1.1
+content-type: application/json
+
+{
+    "decision": "approved"
+}
+
+###
+
+DELETE http://localhost:8080/api/claims/5f8fb9418c37486a4ca6b333 HTTP/1.1
+content-type: application/json
+
+###
+
+DELETE http://localhost:8080/api/claims HTTP/1.1
+content-type: application/json
+
+###
+
+GET http://localhost:8080/api/policies/active HTTP/1.1
+content-type: application/json
