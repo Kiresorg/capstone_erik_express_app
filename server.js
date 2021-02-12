@@ -38,5 +38,5 @@ require("./app/routes/claim.routes")(app);
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
-    console.log(`express server running on port ${PORT}.`);
+    console.log("express server is now running on port ${PORT}.");
 });
