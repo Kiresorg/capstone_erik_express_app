@@ -157,7 +157,7 @@ exports.findAllInactive = (req, res) => {
         .catch(err => {
             res.status(500).send({
                 message:
-                    err.message || "An error occurred while retrieving active Policies"
+                    err.message || "An error occurred while retrieving inactive Policies"
             });
         });
 };

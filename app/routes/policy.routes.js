@@ -12,6 +12,9 @@ module.exports = app => {
     // get all active Policies
     router.get("/active", policies.findAllActive);
 
+    // get all inactive Policies
+    router.get("/inactive", policies.findAllInactive);
+
     // get Policy by id
     router.get("/:id", policies.findOne);
 
