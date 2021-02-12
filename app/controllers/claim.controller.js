@@ -54,7 +54,7 @@ exports.findOne = (req, res) => {
     Claim.findById(id)
         .then(data => {
             if(!data)
-                res.status(404).send({ message: "Claim with the id of" +id , message: "could not be found"  });
+                res.status(404).send({ message: `Claim with the id of ${id} could not be found` });
             else res.send(data);
         })
         .catch(err => {
