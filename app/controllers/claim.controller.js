@@ -97,7 +97,7 @@ exports.delete = (req, res) => {
         .then(data => {
             if(!data) {
                 res.status(404).send({
-                    message: `Unable to delete Claim with id of ${id}.`
+                    message: `Attempt to delete Claim with id of ${id} failed.`
                 });
             } else {
                 res.send({
@@ -107,7 +107,7 @@ exports.delete = (req, res) => {
         })
         .catch(err => {
             res.status(500).send({
-                message: "Unable to delete Claim with id of " + id
+                message: "Attempt to delete Claim with id of " + id + " failed."
             });
         });
 };
