@@ -80,7 +80,7 @@ exports.update = (req, res) => {
                 res.status(404).send({
                     message: `Edit failed for Policy with id of ${id}.`
                 });
-            } else res.send({ message: "Successfully updated Claim." });
+            } else res.send({ message: "Claim updated successfully." });
         })
         .catch(err => {
             res.status(500).send({
