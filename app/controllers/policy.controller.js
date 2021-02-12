@@ -85,7 +85,7 @@ exports.update = (req, res) => {
         .then(data => {
             if (!data) {
                 res.status(404).send({
-                    message: `Unable to update Policy with id of ${id}.`
+                    message: `No Policy with id of ${id} found. Delete failed.`
                 });
             } else res.send({ message: "Successfully updated Policy." });
         })
