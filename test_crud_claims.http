@@ -5,8 +5,8 @@ content-type: application/json
     "policy_id": "5f910695e57d68a7ec27e59e",
     "opened_date": "",
     "incident_date": "2020-10-20T18:00:00.000Z",
-    "adjustor_notes": "Adj notes 3",
-    "compensation_amount": 4000,
+    "adjustor_notes": "Adj notes 1",
+    "compensation_amount": 2000,
     "decision": "decision",
     "decision_date": "2020-10-20T18:00:00.000Z",
     "is_closed": false

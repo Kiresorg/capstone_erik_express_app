@@ -4,8 +4,8 @@ content-type: application/json
 {
     "name": "Silver Auto Policy",
     "holder_first_name": "Erik",
-    "holder_last_name": "Gross",
-    "holder_account_id": "555",
+    "holder_last_name": "Jordan",
+    "holder_account_id": "44",
     "is_active_policy": true,
     "has_active_claim": false,
     "effective_date": "2020-10-20T18:00:00.000Z",
@@ -19,22 +19,21 @@ content-type: application/json
 
 ###
 
-GET http://localhost:8080/api/policies/5f90e1acf829950d28be00ee HTTP/1.1
+GET http://localhost:8080/api/policies/6026b9b0465ccc572c8618e1 HTTP/1.1
 content-type: application/json
 
 ###
 
-PUT http://localhost:8080/api/policies/5f910695e57d68a7ec27e59e HTTP/1.1
+PUT http://localhost:8080/api/policies/6026b9b0465ccc572c8618e1 HTTP/1.1
 content-type: application/json
 
 {
-    "name": "Bronze Auto Policy",
-    "holder_last_name": "Johns"
+    "holder_last_name": "Gross"
 }
 
 ###
 
-DELETE http://localhost:8080/api/policies/5f90e1acf829950d28be00ee HTTP/1.1
+DELETE http://localhost:8080/api/policies/6026b9b0465ccc572c8618e1 HTTP/1.1
 content-type: application/json
 
 ###
