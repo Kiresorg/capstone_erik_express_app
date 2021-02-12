@@ -24,5 +24,5 @@ module.exports = app => {
     // delete all Policies
     router.delete("/", policies.deleteAll);
 
-    app.use('/api/policies', router);
+    app.use("/api/policies", router);
 };

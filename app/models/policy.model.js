@@ -15,10 +15,11 @@ module.exports = mongoose => {
     
     schema.method("toJSON", function() {
         const { __v, _id, ...object } = this.toObject();
-        object._id = _id;
+        object.id = _id;
         return object;
     });
     
     const Policy = mongoose.model("policy", schema);
+
     return Policy;
 };

@@ -17,8 +17,8 @@ exports.create = (req, res) => {
         holder_account_id: req.body.holder_account_id,
         is_active_policy: req.body.is_active_policy ? req.body.is_active_policy : false,
         has_active_claim: req.body.has_active_claim ? req.body.has_active_claim : false,
-        effective_date: req.body.effective_date,
-        termination_date: req.body.termination_date
+        effective_date: req.body.effective_date ? req.body.effective_date : "2020-10-20T18:00:00.000Z",
+        termination_date: req.body.termination_date ? req.body.termination_date : "2020-10-20T18:00:00.000Z"
     });
 
     // save Policy to dB

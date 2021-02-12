@@ -24,11 +24,12 @@ content-type: application/json
 
 ###
 
-PUT http://localhost:8080/api/policies/5f90e1acf829950d28be00ee HTTP/1.1
+PUT http://localhost:8080/api/policies/5f910695e57d68a7ec27e59e HTTP/1.1
 content-type: application/json
 
 {
-    "name": "Bronze Auto Policy"
+    "name": "Bronze Auto Policy",
+    "holder_last_name": "Johns"
 }
 
 ###
@@ -47,3 +48,6 @@ GET http://localhost:8080/api/policies/active HTTP/1.1
 content-type: application/json
 
 ###
+###
+
+GET http://localhost:8080/api/policies?holder_last_name=gross&holder_first_name=Erik
