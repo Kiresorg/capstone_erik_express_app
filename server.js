@@ -24,7 +24,7 @@ db.mongoose
         console.log("Connected to Mongo database");
     })
     .catch(err => {
-        console.log("Unable to connect to the database. ", err);
+        console.log("Database connection could not be established", err);
     });
 
 // top route for testing
