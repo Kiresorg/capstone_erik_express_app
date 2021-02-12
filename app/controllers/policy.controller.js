@@ -147,3 +147,17 @@ exports.findAllActive = (req, res) => {
             });
         });
 };
+
+//get all inactive Policies i.e. where is_active_policy is set to false
+exports.findAllInactive = (req, res) => {
+    Policy.find({ is_active_policy: false })
+        .then(data => {
+            res.send(data);
+        })
+        .catch(err => {
+            res.status(500).send({
+                message:
+                    err.message || "An error occurred while retrieving active Policies"
+            });
+        });
+};
