@@ -68,7 +68,7 @@ exports.findOne = (req, res) => {
 exports.update = (req, res) => {
     if(!req.body) {
         return res.status(400).send({
-            message: "Empty data for update"
+            message: "No information provided for Claim update."
         });
     }
 
