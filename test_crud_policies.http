@@ -24,11 +24,19 @@ content-type: application/json
 
 ###
 
+<<<<<<< HEAD
 PUT http://localhost:8080/api/policies/6026b9b0465ccc572c8618e1 HTTP/1.1
 content-type: application/json
 
 {
     "holder_last_name": "Gross"
+=======
+PUT http://localhost:8080/api/policies/5f90e1acf829950d28be00ee HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Bronze Auto Policy"
+>>>>>>> parent of 2c9e91f... updated npm packages
 }
 
 ###
@@ -47,6 +55,3 @@ GET http://localhost:8080/api/policies/active HTTP/1.1
 content-type: application/json
 
 ###
-###
-
-GET http://localhost:8080/api/policies?holder_last_name=gross&holder_first_name=Erik
