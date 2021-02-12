@@ -107,7 +107,7 @@ exports.delete = (req, res) => {
         })
         .catch(err => {
             res.status(500).send({
-                message: 'Claim with id of ${id} was not found when attempting to edit.'
+                message: "Unable to delete Claim with id of " + id
             });
         });
 };
