@@ -19,7 +19,7 @@ content-type: application/json
 
 ###
 
-GET http://localhost:8080/api/policies/5f90e1acf829950d28be00ee HTTP/1.1
+GET http://localhost:8080/api/policies/5f91063a8bb9e99674db17b4 HTTP/1.1
 content-type: application/json
 
 ###
@@ -48,6 +48,10 @@ GET http://localhost:8080/api/policies/active HTTP/1.1
 content-type: application/json
 
 ###
+
+GET http://localhost:8080/api/policies/inactive HTTP/1.1
+content-type: application/json
+
 ###
 
 GET http://localhost:8080/api/policies?holder_last_name=gross&holder_first_name=Erik
