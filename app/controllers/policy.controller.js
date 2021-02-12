@@ -87,7 +87,7 @@ exports.update = (req, res) => {
                 res.status(404).send({
                     message: `Unable to update Policy with id of ${id}.`
                 });
-            } else res.send({ message: "Successfully updated Policy." });
+            } else res.send({ message: "Policy was successfully edited." });
         })
         .catch(err => {
             res.status(500).send({
