@@ -61,7 +61,7 @@ exports.findOne = (req, res) => {
     Policy.findById(id)
         .then(data => {
             if(!data)
-                res.status(404).send({ message: "Not found: Policy with id of " + id });
+                res.status(404).send({ message: `A Policy with id of ${id} could not be found.`});
             else res.send(data);
         })
         .catch(err => {
