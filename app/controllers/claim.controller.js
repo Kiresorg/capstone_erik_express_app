@@ -101,7 +101,7 @@ exports.delete = (req, res) => {
                 });
             } else {
                 res.send({
-                    message: "Claim deleted successfully."
+                    message: "Successfully deleted Claim."
                 })
             }
         })
