@@ -30,7 +30,7 @@ exports.create = (req, res) => {
 };
 
 // get all claims
-exports.findAll = (req, res) => {
+exports.findAllClaims = (req, res) => {
     const adjustor_notes = req.query.adjustor_notes;
     var condition = adjustor_notes ? { adjustor_notes: { $regex: new RegExp(adjustor_notes), $options: "i" }} : {}
 
