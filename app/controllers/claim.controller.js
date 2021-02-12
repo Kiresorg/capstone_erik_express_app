@@ -78,7 +78,7 @@ exports.update = (req, res) => {
         .then(data => {
             if (!data) {
                 res.status(404).send({
-                    message: `Unable to update Claim with id of ${id}.`
+                    message: `Edit failed for Policy with id of ${id}.`
                 });
             } else res.send({ message: "Successfully updated Claim." });
         })
