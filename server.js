@@ -29,7 +29,7 @@ db.mongoose
 
 // top route for testing
 app.get("/", (req, res) => {
-    res.json({ message: "Welcome to LM Policy Manager API" });
+    res.json({ message: "Welcome to Policy Manager API" });
 });
 
 // set up Router
