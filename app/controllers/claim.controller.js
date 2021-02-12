@@ -78,7 +78,7 @@ exports.update = (req, res) => {
         .then(data => {
             if (!data) {
                 res.status(404).send({
-                    message: `Unable to update Claim with id of ${id}.`
+                    message: `Claim with id of ${id} was not found when attempting to edit.`
                 });
             } else res.send({ message: "Successfully updated Claim." });
         })
@@ -97,7 +97,7 @@ exports.delete = (req, res) => {
         .then(data => {
             if(!data) {
                 res.status(404).send({
-                    message: `Unable to delete Claim with id of ${id}.`
+                    message: `Claim with id of ${id} was not found when attempting to edit.`
                 });
             } else {
                 res.send({
