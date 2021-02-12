@@ -7,7 +7,7 @@ module.exports = app => {
     router.post("/", claims.create);
 
     // get all Claims
-    router.get("/", claims.findAll);
+    router.get("/", claims.findAllClaims);
 
     // get all active Claims
     router.get("/active", claims.findAllActive);
