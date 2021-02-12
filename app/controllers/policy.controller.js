@@ -5,7 +5,7 @@ const Policy = db.policies;
 exports.create = (req, res) => {
     // validate request
     if(!req.body.name) {
-        res.status(400).send({ message: "Policy name must be entered" });
+        res.status(400).send({ message: "A policy name is required" });
         return;
     }
 
