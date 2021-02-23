@@ -7,7 +7,7 @@ module.exports = app => {
     router.post("/", policies.create);
 
     // get all Policies
-    router.get("/", policies.findAll);
+    router.get("/", policies.findAllPolicies);
 
     // get all active Policies
     router.get("/active", policies.findAllActive);

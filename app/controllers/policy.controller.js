@@ -37,7 +37,7 @@ exports.create = (req, res) => {
 
 
 // get all policies
-exports.findAll = (req, res) => {
+exports.findAllPolicies = (req, res) => {
     const last_name = req.query.holder_last_name;
     var condition = last_name ? { holder_last_name: { $regex: new RegExp(last_name), $options: "i" }} : {}
 
