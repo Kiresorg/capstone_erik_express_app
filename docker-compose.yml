@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+    api:
+        build:
+            context: .
+        depends_on:
+            - db
+        networks: 
+            - app-network
+        ports: 
+            - 8080:8080
+    db:
+        image: mongo
+        restart: always
+        ports: 
+            - 27017:27017
+        networks:
+            - app-network
+        volumes: 
+            - /data/mongodb/db:/data/db
+networks:
+    app-network:
+        driver: bridge
